@@ -1,0 +1,14 @@
+../../libs/str
+../../libs/useful
+../../libs/cooker
+../../tests/rand
+../../tests/rand/diehard
+../../tests/str
+../../tests/vector
+../../tests/tokenizer
+../../tests/rand
+../../tests/str
+../../tests/rand/diehard
+../../tests/vector
+../../tests/tokenizer
+../../tests/parser

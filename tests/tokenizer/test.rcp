@@ -1,0 +1,73 @@
+XX = aa
+     bbb
+   ccc
+      ddd
+     # qqp
+
+# decwecewc
+    ABC = def
+        ghi
+     jkl
+    QQP = zzz
+# cewceqc
+func aaa
+    bbb
+  , A = ccc
+        ddd
+  , B = eee
+    , C = fff
+
+func = {
+    A = ${wildcard $1}
+    info $A
+        B
+}
+
+${func aaa bbb
+    , A = ccc
+        ddd
+        , B = eee
+}
+
+# some comment lines
+# more comment lines
+
+VAR1=value
+VAR2+=value
+  spanning
+  several
+  lines
+VAR3?=${VAR1} ${VAR2}
+VAR4-=${math 1+1*VAR2}
+
+info $.ENV.PATH
+
+T=${CTX.FULL}.tokenizer
+.TARGETS.TESTS += $T
+info $T
+struct $T
+    ,SRC = ${wildcard tests/*/*.c}
+
+# Test strings
+VAR5 = "test
+string
+spanning
+multiple
+lines"
+
+VAR+-?NAME = one" two "three"
+"newline
+
+# Test escape codes
+VAR\. = abc
+VAR+\= = "string containing "" double quote"
+"STRANGE VAR NAME"\n = """strange"" ""string"""
+
+info .ENV.PATH
+
+info Unicode entities: [\u120171;\x1D56B;]
+
+
+X = {
+}
+

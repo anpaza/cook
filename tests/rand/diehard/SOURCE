@@ -1,0 +1,12 @@
+The C source code from The Marsaglia Random Number CDROM
+including the Diehard Battery of Tests of Randomness:
+
+https://web.archive.org/web/20160125103112/http://stat.fsu.edu/pub/diehard/
+
+Research Sponsored by the National Science Foundation
+(Grants DMS-8807976 and DMS-9206972), copyright 1995 George Marsaglia.
+
+The source code is slightly modified - lots of non-substantial
+compiler warnings were fixed. Besides, cdoperm5.c was modified
+to use data from a static array rather than reading the external
+file "operm5.cov".
